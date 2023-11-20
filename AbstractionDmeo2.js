@@ -1,4 +1,5 @@
 //proper way of implementing abstraction
+// using a constructor function - ES6
 function Vehicle()  
 {  
     this.vehicleName="vehicleName";  

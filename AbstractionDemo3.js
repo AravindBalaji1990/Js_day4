@@ -1,8 +1,9 @@
+// class way of implementing a abstraction
 class Car {
   constructor(make, model) {
     this.make = make;       // Public property
     this.model = model;     // Public property
-    this._mileage = 0;      // Private property (indicated by the underscore)
+    this._mileage = 1;      // Private property (indicated by the underscore)
 
     // Private method (not accessible from outside)
     this._updateMileage = function (distance) {

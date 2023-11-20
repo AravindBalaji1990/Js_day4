@@ -11,3 +11,4 @@ Vehicle.prototype.display=function()
     return this.vehicleName;  
 }  
 var vehicle=new Vehicle();  
+console.log(vehicle.display())
