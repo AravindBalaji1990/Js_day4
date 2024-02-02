@@ -18,12 +18,12 @@ class Dog extends Animal {
 }
 
 // Create an instance of the subclass
-const myDog = new Dog();
-const myDog1 = new Animal();
+const myDog = new Dog();//this is fopr child
+const myDog1 = new Animal();// this is for parent
 
 // Call the overridden method
 console.log(myDog.makeSound("sample")); // Outputs: "Woof! Woof!"
 console.log(myDog1.makeSound("from parent")); // Outputs: "Woof! Woof!"
 
 // Call the new method specific to Dog
-console.log(myDog.fetch()); // Outputs: "Fetching the ball!"
+// console.log(myDog.fetch()); // Outputs: "Fetching the ball!"

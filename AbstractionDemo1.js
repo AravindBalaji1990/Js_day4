@@ -10,5 +10,5 @@ Vehicle.prototype.display=function()
 {  
     return this.vehicleName;  
 }  
-var vehicle=new Vehicle();  
+var vehicle=new Vehicle("sample");  
 console.log(vehicle.display())
