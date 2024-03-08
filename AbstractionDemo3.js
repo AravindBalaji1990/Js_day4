@@ -9,7 +9,7 @@ class Car {
     this._updateMileage = function (distance) {
         // private varibale
         // this._mileage = _mileage+distance -> abbreavaiton of the below line
-      this._mileage += distance; // this._mileage = this._mileage+distance
+      this._mileage += distance; // this._mileage = this._mileage + distance
     };
   }
 

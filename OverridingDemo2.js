@@ -1,6 +1,10 @@
+
+//overrding  uses the concept of inheritance
 // Base class (superclass)
 class ClassA {
+  //my funciton or it can be any fucniton
   arithmeticoperation(a,b) {
+    //multiply
     return a*b;
   }
 }
@@ -12,18 +16,18 @@ class ClassB extends ClassA {
   }
 
   // New method specific to Dog
-  fetch() {
-    return "Fetching the ball!";
+  childfucntion() {
+    return "this is from child";
   }
 }
 
 // Create an instance of the subclass
-const myDog = new ClassB();//this is fopr child
-const myDog1 = new ClassA();// this is for parent
+const objB = new ClassB();//this is fopr child
+const objA = new ClassA();// this is for parent
 
 // Call the overridden method
-console.log(myDog.arithmeticoperation(2,3)); 
-console.log(myDog1.arithmeticoperation(2,3)); 
+console.log(objB.arithmeticoperation(2,3)); 
+console.log(objA.arithmeticoperation(2,3)); 
 
 // Call the new method specific to Dog
 // console.log(myDog.fetch()); // Outputs: "Fetching the ball!"
