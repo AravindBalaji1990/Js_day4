@@ -25,3 +25,5 @@ functiontwo.prototype.display = function(){
 
 const obj = new functiontwo('second' , 123)
 obj.display()
+const obj1 = new functionone('one')
+obj1.display()
