@@ -1,12 +1,12 @@
 // Base class (superclass)
-class Animal {
+class ParentClass {
   makeSound(a) {
     return "Some generic sound " +a;
   }
 }
 
 // Subclass (derived class) inheriting from Animal
-class Dog extends Animal {
+class ChildClass extends ParentClass {
   makeSound(a) {
     return "Sound of dog " + a;
   }
@@ -18,12 +18,12 @@ class Dog extends Animal {
 }
 
 // Create an instance of the subclass
-const myDog = new Dog();//this is fopr child
-const myDog1 = new Animal();// this is for parent
+const objchild = new ChildClass();//this is fopr child
+const objparent = new ParentClass();// this is for parent
 
 // Call the overridden method
-console.log(myDog.makeSound("sample")); // Outputs: "Woof! Woof!"
-console.log(myDog1.makeSound("from parent")); // Outputs: "Woof! Woof!"
+console.log(objchild.makeSound("sample")); // Outputs: "Woof! Woof!"
+console.log(objparent.makeSound("from parent")); // Outputs: "Woof! Woof!"
 
 // Call the new method specific to Dog
 // console.log(myDog.fetch()); // Outputs: "Fetching the ball!"

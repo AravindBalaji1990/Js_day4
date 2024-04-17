@@ -6,6 +6,7 @@ A.prototype.display=function()
 {  
   return "A is invoked";  
 }  
+
 function B()  
 {  
     
